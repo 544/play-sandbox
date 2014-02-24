@@ -7,7 +7,7 @@ object Misc {
 
 
   val fibMemo = new Array[Int](1000);
-  // $B%U%#%\%J%C%A?tNs$rJV$9(B
+  // フィボナッチ数列を返す
   // a(0) = 0,a(1) = 1 a(n) = a(n-1) + a(n-2)
   def fib(n:Int):Int = {
     if (n <= 1) return n;
@@ -16,11 +16,14 @@ object Misc {
     return fibMemo(n);
   }
 
-  // $BItJ,OBLdBj(B
+  // 部分和問題
   /** 
-   * $BItJ,OBLdBj(B
-   * n$B8D$NJQ?t(B a(1),a(2),...a(n)$B$,M?$($i$l$?;~!"$=$NCf$+$i4v$D$+A*$S!"(B
-   * $B$=$NOB$r$A$g$&$I(Bk$B$K$9$k$3$H$,$G$-$k$+$I$&$+H=Dj$9$k!#(B
+   * 部分和問題
+   * n個の変数 a(1),a(2),...a(n)が与えられた時、その中から幾つか選び、
+   * その和をちょうどkにすることができるかどうか判定する。
   */
+  def checkPartSum(nums:Array[Int], target:Int):Array[Int] = {
+    return Array(0);
+  }
 
 }
